@@ -12,7 +12,6 @@ import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -21,7 +20,7 @@ import com.example.movieinfo.navigation.MovieScreens
 @Composable
 fun HomeScreen(navController: NavController){
     Scaffold(topBar = {
-        TopAppBar(backgroundColor = Color.Magenta, elevation = 5.dp) {
+        TopAppBar(backgroundColor = MaterialTheme.colors.background, elevation = 5.dp) {
             Text(text = "Movies")
         }
     }) { contentPadding ->

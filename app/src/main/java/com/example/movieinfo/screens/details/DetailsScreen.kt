@@ -20,8 +20,9 @@ import androidx.navigation.NavController
 @OptIn(ExperimentalUnitApi::class)
 @Composable
 fun DetailsScreen(navController: NavController, movieTitle: String?){
-    Scaffold(topBar = {TopAppBar(backgroundColor = Color.Magenta, elevation = 4.dp) {
+    Scaffold(topBar = {TopAppBar(backgroundColor = MaterialTheme.colors.background, elevation = 4.dp) {
         Row(horizontalArrangement = Arrangement.Start) {
+            Spacer(modifier = Modifier.width(8.dp))
             Icon(
                 imageVector = Icons.Default.ArrowBack, 
                 contentDescription = "Back arrow", modifier = Modifier.clickable {
